@@ -16,4 +16,9 @@ body {
     height: 240px;
     background-color: #1c1c1c;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    transition: all 8s ease;
+}
+
+.back {
+    background-color: white;
 }
