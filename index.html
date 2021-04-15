@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <title>Business Card</title>
     <link rel="stylesheet" href="./bc.css">
 </head>
+
 <body>
-    <div class="card back"></div>
-    <div onmouseover="rotate()" onmouseout="derotate()" class="card" id="face"></div>
-    
-    <script src="./bc.js"></script>
+    <div onmouseover="rotate()" onmouseout="derotate()" class="container">
+        <div class="card" id="back"></div>
+        <div class="card" id="face"></div>
+    </div>
+
 </body>
+
 </html>

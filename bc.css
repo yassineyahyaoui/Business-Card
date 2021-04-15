@@ -5,20 +5,30 @@
 body {
     background-color: #492E78;
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
 }
 
-.card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 480px;
-    height: 240px;
-    background-color: #1c1c1c;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+.container {
+    margin-top: 250px;
     transition: all 8s ease;
 }
 
-.back {
+.container:hover {
+    transform : rotateY( 180deg);
+}
+
+.card {
+    width: 480px;
+    height: 240px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+#back {
     background-color: white;
+}
+
+#face {
+    margin-top: -240px;
+    background-color: #1c1c1c;
 }
